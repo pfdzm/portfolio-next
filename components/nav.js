@@ -19,7 +19,7 @@ const Nav = () => (
     <style jsx>{`
       nav {
         background-color: rebeccapurple;
-        color: #eee;
+        color: white;
         font-weight: 900;
         padding: 0.8rem 0;
         font-size: xx-large;
@@ -29,7 +29,7 @@ const Nav = () => (
         display: flex;
         flex-direction: column;
         list-style: none;
-        justify-content: space-around;
+        justify-content: space-between;
         margin: 0 0 0 1rem;
         padding: 0;
       }
@@ -37,7 +37,8 @@ const Nav = () => (
       @media (min-width: 768px) {
         nav ul {
           flex-direction: row;
-          margin-left: 0;
+          max-width: 48rem;
+          margin: 0 auto;
         }
       }
       nav li {
@@ -56,11 +57,10 @@ const Nav = () => (
         transition: all 0.2s ease-in-out;
         bottom: 0;
         z-index: 1;
-        height: 5px;
+        height: 2px;
         background-color: palevioletred;
         content: "";
         position: absolute;
-        min-height: 2px;
       }
       nav li a:hover::before {
         width: 100%;

@@ -19,8 +19,14 @@ const Layout = props => (
       }
 
       .contentWrapper {
+        margin: 0 1rem 0 1rem;
+      }
+
+      @media (min-width: 768px) {
+        .contentWrapper {
           max-width: 48rem;
           margin: 0 auto;
+        }
       }
     `}</style>
   </React.Fragment>

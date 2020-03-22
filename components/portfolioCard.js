@@ -50,10 +50,27 @@ const PortfolioCard = props => {
           color: palevioletred;
           text-decoration: none;
           font-weight: 900;
+          position: relative;
         }
 
         card-body a:hover {
           color: ;
+        }
+
+        .card-body a::before {
+          width: 0%;
+          transition: all 0.2s ease-in-out;
+          position: absolute;
+          z-index: 1;
+          content: "";
+          height: 2px;
+          background-color: palevioletred;
+          transform: translateY(100%);
+          bottom: 0;
+        }
+
+        .card-body a:hover::before {
+          width: 100%;
         }
       `}</style>
     </React.Fragment>

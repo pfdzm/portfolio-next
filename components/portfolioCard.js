@@ -31,8 +31,11 @@ const PortfolioCard = props => {
           height: auto;
           border: 1px solid #eee;
           border-radius: 5px;
-          box-shadow: 0px 0px 5px #eee;
           margin-bottom: 0;
+        }
+
+        .card img:hover {
+          box-shadow: 4px 4px 0px palevioletred;
         }
 
         .card-title {
